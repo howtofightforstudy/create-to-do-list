@@ -1,0 +1,75 @@
+h1{
+    color: rgb(255, 255, 255); 
+    font-size: 30px;
+}
+
+body{
+    padding: 50px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: rgb(156, 79, 79);
+}
+
+.card {
+    padding: 30px;
+    display: flexbox;
+    text-align: center;
+    justify-content: baseline;
+    background-color: rgb(196, 153, 153);
+    width: 500px;
+    margin: 0 auto;
+    border: 30px;
+    border-radius: 25px;
+}
+
+.inputCard {
+    display: inline;
+    margin-bottom: 10px;
+}
+
+#taskList {
+    font: bold;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+li {
+    font: bold;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    padding: 5px 0;
+    border-bottom: 1px solid #000000;
+    overflow: hidden;
+}
+
+textarea {
+    width: 100%;
+    max-width: 400px; /* Metin alanının maksimum genişliği */
+    height: 50px;
+    box-sizing: border-box;
+}
+
+li .buttons {
+    display: flex;
+    gap: 5px;
+}
+
+button {
+    cursor: pointer;
+}
+
+button.complete {
+    background-color: rgb(83, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+button.delete {
+    background-color: rgb(83, 0, 0);
+    color: white;
+}
