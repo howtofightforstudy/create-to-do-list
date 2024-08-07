@@ -1,25 +1,26 @@
 h1{
     color: rgb(255, 255, 255); 
-    font-size: 30px;
+    font-size: 35px;
 }
+
 
 body{
     padding: 50px;
     display: flex;
     text-align: center;
     justify-content: center;
-    background-color: rgb(156, 79, 79);
+    background-color: rgb(0, 31, 56);
 }
 
 .card {
     padding: 30px;
-    display: flexbox;
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    justify-content: baseline;
-    background-color: rgb(196, 153, 153);
+    justify-content: center;
     width: 500px;
     margin: 0 auto;
-    border: 30px;
+    background-color: rgb(61, 110, 133);
     border-radius: 25px;
 }
 
@@ -29,28 +30,27 @@ body{
 }
 
 #taskList {
-    font: bold;
     font-size: 20px;
-    color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0);  
     list-style-type: none;
-    padding: 0;
+    padding: 0;   
     display: flex;
-    flex-direction: column;
-}
+    flex-direction: column; 
+}    
 
 li {
     font: bold;
     display: flex;
     justify-content: space-between;
     text-align: left;
-    padding: 5px 0;
-    border-bottom: 1px solid #000000;
-    overflow: hidden;
+    padding: 7px 0;
+    border-bottom: 1px solid hsl(0, 0%, 100%);
+    overflow: hidden; /*li dışına taşan öğeleri gizler*/ 
 }
 
 textarea {
     width: 100%;
-    max-width: 400px; /* Metin alanının maksimum genişliği */
+    max-width: 400px; /*Metin alanının maksimum genişliği (li alanının max genişliği olacak)*/
     height: 50px;
     box-sizing: border-box;
 }
@@ -62,14 +62,19 @@ li .buttons {
 
 button {
     cursor: pointer;
+    background-color: rgb(255, 255, 255);
 }
 
 button.complete {
-    background-color: rgb(83, 0, 0);
+    background-color: rgb(0, 44, 94);
     color: rgb(255, 255, 255);
+    height: 30px;
+    width: 30px;
 }
 
 button.delete {
-    background-color: rgb(83, 0, 0);
+    background-color: rgb(0, 44, 94);
     color: white;
+    height: 30px;
+    width: 30px;
 }
